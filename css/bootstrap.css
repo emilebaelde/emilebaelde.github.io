@@ -7769,7 +7769,7 @@ body {
   overflow: hidden; }
 
 nav {
-  background-color: red;
+  background-color: rgba(15, 22, 38, 0.4);
   margin-top: -70px;
   overflow: hidden;
   -webkit-animation: move-in 1s ease;
@@ -7860,6 +7860,34 @@ button[aria-expanded="true"] .bar:last-of-type {
   /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em; }
+
+#arrow-down {
+  color: rgba(15, 22, 38, 0.4);
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-animation: jump 4s infinite;
+  animation: jump 4s infinite; }
+  #arrow-down i {
+    font-size: 80px; }
+  #arrow-down i:hover {
+    color: rgba(15, 22, 38, 0.9); }
+
+@-webkit-keyframes jump {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }
+
+@keyframes jump {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }
 
 /**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
 @media (min-width: 992px) {

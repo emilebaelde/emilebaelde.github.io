@@ -3,7 +3,7 @@ body{
   overflow: hidden;
 }
 nav{
-  background-color: red;
+  background-color:rgba(15, 22, 38, .4);
   margin-top: -70px;
   overflow: hidden;
   animation: move-in 1s ease;
@@ -79,7 +79,21 @@ button[aria-expanded="true"] .bar:last-of-type{
   margin-bottom: 0.5em;
 }
 
-
+#arrow-down {
+  color: rgba(15, 22, 38, .4);
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  animation: jump 4s infinite;
+  i {
+    font-size: 80px; }
+  i:hover {
+    color: rgba(15, 22, 38, .9);}
+}
+@keyframes jump {
+  0% { top: 0; }
+  50% { top: 50px; }
+  100% { top: 0; } }
 /**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
 @include media-breakpoint-up(sm) {  }
 @include media-breakpoint-up(md) {  }
