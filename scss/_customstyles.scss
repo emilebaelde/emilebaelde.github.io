@@ -1,4 +1,68 @@
 /**Dit is mijn eigne css bestand**/
-.test{
-  background: red;
+body{
+  overflow: hidden;
 }
+nav{
+  background-color: red;
+  margin-top: -70px;
+  overflow: hidden;
+  animation: move-in 1s ease;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes move-in {
+  from{
+    margin-top: -70px;
+  }
+  to{
+    margin-top: 0;
+  }
+}
+
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../assets/images/modern.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  /* Text styles */
+  font-size: 5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+
+/**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {  }
+@include media-breakpoint-up(lg) {
+  .d-fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@include media-breakpoint-up(xl) {  }

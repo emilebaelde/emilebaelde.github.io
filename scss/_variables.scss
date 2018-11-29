@@ -7,6 +7,11 @@
 //
 // Color system
 //
+// own colors
+$navy: #0F1626;
+$leather: #AB987A;
+$coral: #FF533D;
+$eggshell:#F5F5F5;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -78,6 +83,10 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+$navy: #0F1626;
+$leather: #AB987A;
+$coral: #FF533D;
+$eggshell:#F5F5F5;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -90,7 +99,12 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "navy":       $navy,
+    "leather":    $leather,
+    "coral":      $coral,
+    "eggshell":   $eggshell
+
   ),
   $theme-colors
 );
