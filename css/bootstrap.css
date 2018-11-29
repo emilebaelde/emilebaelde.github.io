@@ -7774,10 +7774,46 @@ nav {
   overflow: hidden;
   -webkit-animation: move-in 1s ease;
   animation: move-in 1s ease;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+
+* {
+  outline: none !important; }
+
+.bar {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  opacity: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s; }
+
+.navbar-toggler {
+  border-left-width: 0px !important;
+  border-right-width: 0px !important;
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important; }
+
+button[aria-expanded="true"] .bar:first-of-type {
+  -webkit-transform: rotate(45deg) translate(20px, 5px);
+  -ms-transform: rotate(45deg) translate(20px, 5px);
+  transform: rotate(45deg) translate(20px, 5px); }
+
+button[aria-expanded="true"] .bar:nth-child(2) {
+  -webkit-transform: translate(100px, 0);
+  -ms-transform: translate(100px, 0);
+  transform: translate(100px, 0); }
+
+button[aria-expanded="true"] .bar:last-of-type {
+  -webkit-transform: rotate(-45deg) translate(11px, 5px);
+  -ms-transform: rotate(-45deg) translate(11px, 5px);
+  transform: rotate(-45deg) translate(11px, 5px); }
 
 @-webkit-keyframes move-in {
   from {
