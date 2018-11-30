@@ -7766,7 +7766,7 @@ a.text-eggshell:hover, a.text-eggshell:focus {
 
 /**Dit is mijn eigne css bestand**/
 body {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 nav {
   background-color: rgba(15, 22, 38, 0.4);
@@ -7795,10 +7795,7 @@ nav {
   transition: transform 1s, -webkit-transform 1s; }
 
 .navbar-toggler {
-  border-left-width: 0px !important;
-  border-right-width: 0px !important;
-  border-top-width: 0px !important;
-  border-bottom-width: 0px !important; }
+  border-width: 0 !important; }
 
 button[aria-expanded="true"] .bar:first-of-type {
   -webkit-transform: rotate(45deg) translate(20px, 5px);
@@ -7851,8 +7848,7 @@ button[aria-expanded="true"] .bar:last-of-type {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/modern.jpg");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
 
 .hero h1 {
   /* Text styles */
@@ -7889,6 +7885,53 @@ button[aria-expanded="true"] .bar:last-of-type {
   100% {
     top: 0; } }
 
+.border-green {
+  border: 5px solid green; }
+
+.wrapper {
+  color: white; }
+
+svg {
+  margin-left: -8%;
+  width: 300%;
+  height: 300%;
+  -webkit-filter: drop-shadow(5px 3px 4px black);
+  filter: drop-shadow(5px 3px 4px black); }
+
+.rechthoek-boven {
+  width: 372px;
+  -webkit-animation: animate_boven 2s ease;
+  animation: animate_boven 2s ease; }
+
+@-webkit-keyframes animate_boven {
+  from {
+    width: 0px; }
+  to {
+    width: 372px; } }
+
+@keyframes animate_boven {
+  from {
+    width: 0px; }
+  to {
+    width: 372px; } }
+
+.rechthoek-onder {
+  width: 372px;
+  -webkit-animation: animate_onder 2s ease;
+  animation: animate_onder 2s ease; }
+
+@-webkit-keyframes animate_onder {
+  from {
+    width: 0px; }
+  to {
+    width: 372px; } }
+
+@keyframes animate_onder {
+  from {
+    width: 0px; }
+  to {
+    width: 372px; } }
+
 /**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
 @media (min-width: 992px) {
   .d-fixed-top {
@@ -7896,4 +7939,9 @@ button[aria-expanded="true"] .bar:last-of-type {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030; } }
+    z-index: 1030; }
+  svg {
+    width: 100%;
+    height: 100%; }
+  .wrapper {
+    margin-left: 40%; } }

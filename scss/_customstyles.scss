@@ -1,6 +1,6 @@
 /**Dit is mijn eigne css bestand**/
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 nav{
   background-color:rgba(15, 22, 38, .4);
@@ -24,10 +24,7 @@ nav{
   transition: transform 1s ;
 }
 .navbar-toggler{
-  border-left-width: 0px !important;
-  border-right-width: 0px !important;
-  border-top-width: 0px !important;
-  border-bottom-width: 0px !important;
+  border-width: 0 !important;
 }
 
 button[aria-expanded="true"] .bar:first-of-type{
@@ -51,7 +48,7 @@ button[aria-expanded="true"] .bar:last-of-type{
 .hero {
   /* Sizing */
   width: 100vw;
-  height: 100vh;
+height: 100vh;
 
   /* Flexbox stuff */
   display: flex;
@@ -67,7 +64,6 @@ button[aria-expanded="true"] .bar:last-of-type{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .hero h1 {
@@ -94,6 +90,48 @@ button[aria-expanded="true"] .bar:last-of-type{
   0% { top: 0; }
   50% { top: 50px; }
   100% { top: 0; } }
+
+.border-green{
+
+  border: 5px solid green;
+}
+.wrapper{
+  color: white;
+}
+svg{
+  margin-left:-8%;
+  width: 300%;
+  height: 300%;
+  filter: drop-shadow(5px 3px 4px black);
+}
+.rechthoek-boven{
+  width: 372px;
+  animation: animate_boven 2s ease;
+
+  @keyframes animate_boven {
+    from{
+      width: 0px;
+    }
+    to{
+      width: 372px;
+    }
+  }
+}
+.rechthoek-onder{
+  width: 372px;
+  animation: animate_onder 2s ease;
+
+
+
+  @keyframes animate_onder {
+    from{
+      width: 0px;
+    }
+    to{
+      width: 372px;
+    }
+  }
+}
 /**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
 @include media-breakpoint-up(sm) {  }
 @include media-breakpoint-up(md) {  }
@@ -104,6 +142,13 @@ button[aria-expanded="true"] .bar:last-of-type{
     right: 0;
     left: 0;
     z-index: 1030;
+  }
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper{
+    margin-left: 40%;
   }
 }
 
