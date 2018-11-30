@@ -7892,16 +7892,76 @@ button[aria-expanded="true"] .bar:last-of-type {
   color: white; }
 
 svg {
+  overflow-y: hidden;
   margin-left: -8%;
   width: 300%;
   height: 300%;
   -webkit-filter: drop-shadow(5px 3px 4px black);
   filter: drop-shadow(5px 3px 4px black); }
 
+.achternaam {
+  -webkit-animation: movein 2s ease;
+  animation: movein 2s ease;
+  -webkit-transform: translate(0, 100px);
+  -ms-transform: translate(0, 100px);
+  transform: translate(0, 100px);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  fill: white; }
+
+@-webkit-keyframes movein {
+  from {
+    -webkit-transform: translate(0, 100px);
+    transform: translate(0, 100px); }
+  to {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes movein {
+  from {
+    -webkit-transform: translate(0, 100px);
+    transform: translate(0, 100px); }
+  to {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+.voornaam {
+  -webkit-animation: moveout 2s ease;
+  animation: moveout 2s ease;
+  -webkit-transform: translate(0, -100px);
+  -ms-transform: translate(0, -100px);
+  transform: translate(0, -100px);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  fill: white; }
+
+@-webkit-keyframes moveout {
+  from {
+    -webkit-transform: translate(0, -100px);
+    transform: translate(0, -100px); }
+  to {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes moveout {
+  from {
+    -webkit-transform: translate(0, -100px);
+    transform: translate(0, -100px); }
+  to {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
 .rechthoek-boven {
-  width: 372px;
   -webkit-animation: animate_boven 2s ease;
-  animation: animate_boven 2s ease; }
+  animation: animate_boven 2s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
 
 @-webkit-keyframes animate_boven {
   from {
@@ -7916,21 +7976,136 @@ svg {
     width: 372px; } }
 
 .rechthoek-onder {
-  width: 372px;
   -webkit-animation: animate_onder 2s ease;
-  animation: animate_onder 2s ease; }
+  animation: animate_onder 2s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
 
 @-webkit-keyframes animate_onder {
   from {
-    width: 0px; }
+    width: 0; }
   to {
     width: 372px; } }
 
 @keyframes animate_onder {
   from {
-    width: 0px; }
+    width: 0; }
   to {
     width: 372px; } }
+
+.rechthoek-e {
+  -webkit-animation: animate_e 2s ease;
+  animation: animate_e 2s ease;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes animate_e {
+  from {
+    height: 0; }
+  to {
+    height: 242px; } }
+
+@keyframes animate_e {
+  from {
+    height: 0; }
+  to {
+    height: 242px; } }
+
+#boven {
+  stroke-dasharray: 191;
+  stroke-dashoffset: 191;
+  -webkit-animation: midden 2s 1s ease-in, kleur 4s 3s ease-in;
+  animation: midden 2s 1s ease-in, kleur 4s 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes boven {
+  from {
+    stroke-dashoffset: 191; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes boven {
+  from {
+    stroke-dashoffset: 191; }
+  to {
+    stroke-dashoffset: 0; } }
+
+#onder {
+  stroke-dasharray: 191;
+  stroke-dashoffset: 191;
+  -webkit-animation: midden 2s 1s ease-in, kleur 4s 3s ease-in;
+  animation: midden 2s 1s ease-in, kleur 4s 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes onder {
+  from {
+    stroke-dashoffset: 191; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes onder {
+  from {
+    stroke-dashoffset: 191; }
+  to {
+    stroke-dashoffset: 0; } }
+
+#midden {
+  stroke-dasharray: 178;
+  stroke-dashoffset: 178;
+  -webkit-animation: midden 2s 1s ease-in, kleur 4s 3s ease-in;
+  animation: midden 2s 1s ease-in, kleur 4s 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes midden {
+  from {
+    stroke-dashoffset: 178; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes midden {
+  from {
+    stroke-dashoffset: 178; }
+  to {
+    stroke-dashoffset: 0; } }
+
+#b {
+  stroke-dasharray: 629;
+  stroke-dashoffset: 629;
+  -webkit-animation: b 2s 1s ease-in, kleur 4s 3s ease-in;
+  animation: b 2s 1s ease-in, kleur 4s 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes b {
+  from {
+    stroke-dashoffset: 629; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes b {
+  from {
+    stroke-dashoffset: 629; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes kleur {
+  from {
+    fill: transparent; }
+  to {
+    fill: white; } }
+
+@keyframes kleur {
+  from {
+    fill: transparent; }
+  to {
+    fill: white; } }
 
 /**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
 @media (min-width: 992px) {
