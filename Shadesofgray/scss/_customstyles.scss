@@ -1,0 +1,252 @@
+/***DIT IS MIJN EIGEN CSS BESTAND**/
+/**MOBILE FIRST**/
+.kenburns-top-right {
+  -webkit-animation: kenburns-top-right 5s ease-out both;
+  animation: kenburns-top-right 5s ease-out both;
+
+}
+
+@-webkit-keyframes kenburns-top-right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 16%;
+    transform-origin: 84% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, -15px);
+    transform: scale(1.25) translate(20px, -15px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+  }
+}
+@keyframes kenburns-top-right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 16%;
+    transform-origin: 84% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, -15px);
+    transform: scale(1.25) translate(20px, -15px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+  }
+}
+
+.bg-shades1{
+  overflow:hidden;
+}
+
+#slider-content{
+  top:50%;
+  right:10%;
+  width:75%;
+  transform:translate(0,-50%);
+}
+#slider-content h1{
+  font-size:1rem;
+}
+.icondesign{
+  border-radius:50%;
+  background:#555;
+  padding:15px;
+  transform: translateY(-50%);
+  border: 5px solid white;
+}
+.articlebg{
+  background:#f5f5f5;
+}
+
+#choose{
+  background-image: url("../assets/images/Desk-background-white-3.png");
+  height: 50%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#choose_content{
+  opacity: 0.8;
+
+}
+#choose_title{
+  text-shadow: 2px 2px 8px black;
+  font-size: 2rem;
+}
+
+#choose article h3{
+  font-size: 18px;
+  line-height: 0.5;
+}
+#choose article p{
+  font-size: 14px;
+}
+.icon{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#what header h2{
+  font-size: 1.6rem;
+}
+#what article header h3{
+  font-size: 1rem;
+}
+#what article p{
+  font-size: 0.8rem;
+}
+#how{
+  color: #555555;
+  background-image: url("../assets/images/cosmic.jpg");
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#how h3 {
+  font-size: 1.1rem;
+}
+.how_text{
+  font-size:14px;
+}
+
+.naam{
+  border-top: 30px solid white;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 0;
+  filter: drop-shadow(2px 2px 2px #b5b5b5);
+  transition: width 1s ease-in-out;
+  p{
+    margin-top:-30px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+#team article:hover .naam, #team article:hover .functie{
+  width: 100%;
+
+}
+
+
+.functie{
+  border-top: 30px solid #555;
+  border-right: 25px solid transparent;
+  height: 0;
+  margin-top: -5px;
+  width: 0;
+  filter: drop-shadow(2px 2px 2px #b5b5b5);
+  transition: width 1s ease-in-out;
+
+  p{
+    margin-top:-28px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.team_image{
+  margin-top: -10px;
+  border: 5px solid gray;
+
+}
+.trape{
+  margin-left: -8.5%;
+}
+.bg_foto{
+}
+li{
+  list-style: none;
+margin-bottom:15px;
+}
+.bg_tekst, .bg_tekst p{
+font-size: 12px;
+}
+.content {
+  opacity: 0;
+}
+.outer{
+  border: 1px solid white;
+}
+.outer:hover .content {
+  opacity:10;
+}
+.outer:hover{
+  background-color: dodgerblue!important;
+}
+#best header h2{
+  font-size: 1.125rem;
+}
+#best p, #best h3{
+  font-size: 0.875rem;
+}
+.carouselcontent p, .carouselcontent h3{
+  font-size:  0.875rem;
+}
+.knoppen p{
+  font-size:  0.75rem;
+}
+#carouselExampleControls > a.carousel-control-prev{
+  width: 20px;
+  height: 20px;
+  color: black;
+  top: 100%;
+  left: 10%;
+}
+ #carouselExampleControls > a.carousel-control-next{
+   width: 20px;
+   height: 20px;
+  color: black;
+  top:100%;
+  left: 13%;
+}
+#carouselExampleControls > a.carousel-control-next:hover,#carouselExampleControls > a.carousel-control-prev:hover{
+  background-color: dodgerblue;
+}
+
+/**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {  }
+@include media-breakpoint-up(lg) {
+  .d-fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  #slider-content{
+    width:36%;
+
+  }
+  #slider-content h1{
+    font-size:2.5rem;
+  }
+  #choose_title{
+    font-size: 2.5rem;
+  }
+  #choose article:hover i{
+    color: cornflowerblue;
+  }
+  #what article:hover  i {
+    background-color: cornflowerblue !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {  }
+
+
