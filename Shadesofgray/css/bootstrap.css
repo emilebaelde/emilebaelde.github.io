@@ -7692,6 +7692,129 @@ li {
 #carouselExampleControls > a.carousel-control-next:hover, #carouselExampleControls > a.carousel-control-prev:hover {
   background-color: dodgerblue; }
 
+.speech-bubble {
+  position: relative;
+  border-radius: .4em; }
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 1.375em solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -0.687em;
+  margin-bottom: -1.375em; }
+
+.quote {
+  font-size: 4.5rem;
+  color: dodgerblue; }
+
+.greyscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 1s ease-in-out;
+  transition: -webkit-filter 1s ease-in-out;
+  -o-transition: filter 1s ease-in-out;
+  transition: filter 1s ease-in-out;
+  transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out; }
+
+.greyscale:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
+
+#carouselExampleControls2 p {
+  font-size: 0.875rem; }
+
+.person_carousel p {
+  line-height: 0.6;
+  font-weight: 600; }
+
+#carouselExampleControls2 > a.carousel-control-prev {
+  width: 20px;
+  height: 20px;
+  color: black;
+  top: 90%;
+  left: 10%; }
+
+#carouselExampleControls2 > a.carousel-control-next {
+  width: 20px;
+  height: 20px;
+  color: black;
+  top: 90%;
+  left: 13%; }
+
+#carouselExampleControls2 > a.carousel-control-next:hover, #carouselExampleControls2 > a.carousel-control-prev:hover {
+  background-color: white; }
+
+.start {
+  background-color: #e6e6e6; }
+
+.stan {
+  background-color: #b6b6b6; }
+
+.bus {
+  background-color: #999999; }
+
+.ulti {
+  background-color: #777777; }
+
+.princing_content span {
+  font-size: 1.875rem;
+  color: #999999;
+  font-weight: 600; }
+
+.princing_content li {
+  font-size: 0.875rem;
+  color: #999999; }
+
+.princing_content button {
+  border-radius: 0; }
+
+.princing_content:hover h3 {
+  color: #3baafe; }
+
+.princing_content button:hover {
+  background-color: #3baafe;
+  color: white; }
+
+.single_counter_two_right h3 {
+  border-left: 2px solid white;
+  padding-bottom: 25%; }
+
+.single_counter_two_right p {
+  margin-top: -30%; }
+
+footer h4 {
+  font-size: 1.125rem; }
+
+footer p, footer address, footer li a, footer .adres i {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #b6b6b6; }
+
+footer li {
+  margin-bottom: 0; }
+
+footer input, footer textarea, footer button {
+  background-color: #b6b6b6;
+  border: none;
+  border-radius: 0 !important; }
+
+.icons i {
+  color: #555555;
+  background-color: #b6b6b6; }
+
+.icons i:hover {
+  color: white; }
+
+.achtergrondkleur {
+  background-color: #555555; }
+
 /**MEDIAQUERIES (ALLES WAT GROTER IS DAN MOBILE**/
 @media (min-width: 992px) {
   .d-fixed-top {

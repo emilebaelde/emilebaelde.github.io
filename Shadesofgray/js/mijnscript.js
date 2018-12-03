@@ -25,6 +25,14 @@ $(document).ready(function() {
             }
         })
 
-    })
-
+    });
+    // Counter
+    jQuery('.statistic-counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+$('.statistic-counter_two, .statistic-counter, .count-number').counterUp({
+    delay: 10,
+    time: 2000
 });
