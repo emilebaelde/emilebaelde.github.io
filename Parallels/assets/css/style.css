@@ -1,0 +1,154 @@
+main,header{
+    background-color: #282a2e;
+
+}
+nav ul li a:hover{
+    color: #799941 !important;
+}
+
+* {
+    outline: none !important;
+}
+nav{
+    overflow: hidden;
+}
+.bar{
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    opacity: 100%;
+    transition: transform 1s ;
+}
+.navbar-toggler{
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+}
+
+button[aria-expanded="true"] .bar:first-of-type{
+    transform: rotate(45deg) translate(20px,5px);
+}
+button[aria-expanded="true"] .bar:nth-child(2){
+    transform: translate(100px,0);
+}
+button[aria-expanded="true"] .bar:last-of-type{
+    transform: rotate(-45deg) translate(11px,5px);
+}
+
+.right{
+    transform: rotate(180deg);
+}
+
+.carousel-caption{
+    margin-bottom: 150px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 300;
+}
+h1 span{
+font-weight: 600;
+}
+.service_img {
+    width: 90px;
+    height: 90px;
+    padding: 25px;
+    background-color: #313338;
+    border-radius: 50%;
+}
+.service h3{
+    font-size: 24px;
+}
+.service p{
+
+    font-size: 13px;
+    font-weight: 300;
+}
+#like{
+    background-color: #4b3f34;
+}
+#like h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+.knop1{
+background-color: #b0cd3b;
+
+}
+.test{
+    padding-bottom:4%;
+    padding-top: 10%;
+}
+.service_blok:hover .service_img{
+    transition: transform 1s;
+}
+.service_blok:hover .service_img{
+    transform:rotate(360deg) scale(1.1);
+}
+.knop2{
+    background-color: #1bbc9d;
+}
+.portfolio_hok{
+
+background-color: #313337;
+}
+.portfolio_content{
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+    background-color: #232323;
+
+}
+#portfolio .nav-link{
+    color: white;
+    background-color: #313337;
+    margin: 0 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    line-height: 0.8;
+}
+#portfolio .active{
+    color:  #1bbc9d;
+}
+#myTab{
+    border: none;
+
+}
+#portfolio .nav-link:hover{
+    border: none;
+    color:  #1bbc9d;
+}
+
+/*Extra small devices (portrait phones, less than 576px) No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .portfolio_hok{
+        height: 225px;
+        width: 225px;
+        background-color: #313337;
+    }
+    .portfolio_content{
+        display: none;
+    }
+    .portfolio_hok:hover .portfolio_content{
+        display: block;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
